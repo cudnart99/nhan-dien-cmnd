@@ -7,13 +7,9 @@ opencv_contrib_python==4.6.0.66
 opencv_python==4.5.5.64
 opencv_python_headless==4.10.0.84
 openpyxl==3.0.10
-paddleocr==2.7.3
-paddleocr.egg==info
 Pillow==9.5.0
-Pillow==11.2.1
 psutil==7.0.0
 PyJWT==2.8.0
-PyJWT==2.10.1
-python_dateutil==2.9.0.post0
+python_dateutil==2.9.0.s
 Unidecode==1.2.0
 vietocr==0.3.11
