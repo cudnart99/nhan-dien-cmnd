@@ -10,7 +10,9 @@ COPY requirements.txt ./
 COPY start.sh ./
 
 # Install all dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt && \
+    pip install paddleocr==2.7.3 --no-deps
 
 # Make start.sh executable
 RUN chmod +x start.sh
