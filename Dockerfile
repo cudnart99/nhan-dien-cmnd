@@ -10,8 +10,9 @@ COPY start.sh ./
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
     libgl1-mesa-glx \
-    libglib2.0-0 && \
-    rm -rf /var/lib/apt/lists/*
+    libglib2.0-0 \
+    libgomp1 \
+ && rm -rf /var/lib/apt/lists/*
 
 # Install Python packages
 RUN pip install --upgrade pip && \
