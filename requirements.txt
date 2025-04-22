@@ -2,7 +2,7 @@ Django==3.2
 djangorestframework==3.15.1
 matplotlib==3.10.1
 mongoengine==0.29.1
-numpy==2.2.5
+numpy==1.23.5
 opencv_contrib_python==4.6.0.66
 opencv_python==4.5.5.64
 opencv_python_headless==4.10.0.84
