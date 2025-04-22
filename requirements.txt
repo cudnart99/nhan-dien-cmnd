@@ -7,7 +7,7 @@ opencv_contrib_python==4.6.0.66
 opencv_python==4.5.5.64
 opencv_python_headless==4.10.0.84
 openpyxl==3.0.10
-Pillow==9.5.0
+Pillow==9.4.0
 psutil==7.0.0
 PyJWT==2.8.0
 python_dateutil==2.9.0.post0
