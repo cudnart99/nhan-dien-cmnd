@@ -16,3 +16,4 @@ vietocr==0.3.11
 django-cors-headers==4.5.0
 django-crontab==0.7.1
 paddlepaddle==2.6.2
+torch==1.13.1
