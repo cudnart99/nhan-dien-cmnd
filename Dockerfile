@@ -9,10 +9,13 @@ COPY server/ ./server
 COPY requirements.txt ./
 COPY start.sh ./
 
-# Install all dependencies
+# Install system dependencies (libGL for OpenCV)
+RUN apt-get update && apt-get install -y libgl1-mesa-glx && rm -rf /var/lib/apt/lists/*
+
+# Install Python dependencies
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt && \
-    pip install paddleocr==2.7.3 --no-deps
+    pip install --no-cache-dir paddleocr==2.7.3 --no-deps
 
 # Make start.sh executable
 RUN chmod +x start.sh
