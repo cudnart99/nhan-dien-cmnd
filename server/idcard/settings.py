@@ -79,6 +79,7 @@ if(IS_LINUX):
     INSTALLED_APPS.append('django_crontab')
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -86,7 +87,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
 ]
 
@@ -215,3 +215,5 @@ OPTIONS = {}
 OPTIONS["limit_appear"] = False
 
 SAVE_IMG_LOG = True
+
+CORS_ALLOW_ALL_ORIGINS = True
